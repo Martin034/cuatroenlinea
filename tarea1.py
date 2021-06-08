@@ -1,5 +1,5 @@
 tablero = [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]
-secuencia = [1, 2, 3, 8, 1]
+secuencia = [1, 2, 3, 5, 1]
 
 def soltarFichaEnColumna(ficha, columna, tablero):
     for fila in range (6, 0, -1):
