@@ -31,3 +31,10 @@ def comTab():
         mostrarTablero(tablero)
     else:
         print ("Error, Numeros fuera de rango")
+
+def mostrarColumna(num, tab):
+    columna = []
+    for fila in tab:
+        celda = fila[num-1]
+        columna.append(celda)
+    return columna
