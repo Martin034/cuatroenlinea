@@ -38,3 +38,9 @@ def mostrarColumna(num, tab):
         celda = fila[num-1]
         columna.append(celda)
     return columna
+
+def mostrarFila(num, tab):
+    for I in range (0, len(tab)):
+        if I+1 == num:
+            return tab[I]
+
