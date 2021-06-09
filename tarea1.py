@@ -44,3 +44,10 @@ def mostrarFila(num, tab):
         if I+1 == num:
             return tab[I]
 
+def todasFilas(tab):
+    for I in range (0, len(tab)):
+        columna = []
+        for J in range (0, len(tab)):
+            celda = tab[I][J]
+            columna.append(celda)
+        print(columna)
