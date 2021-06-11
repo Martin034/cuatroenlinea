@@ -51,3 +51,11 @@ def todasFilas(tab):
             celda = tab[I][J]
             columna.append(celda)
         print(columna)
+
+def todasColumnas(tab):
+    for I in range (0, len(tab)):
+        Fila = []
+        for J in range (0, len(tab)):
+            celda = tab[J][I]
+            Fila.append(celda)
+        print(Fila)
