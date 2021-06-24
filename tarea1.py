@@ -11,6 +11,10 @@ def completarTableroEnOrden(tab, sec):
     for I in range (0, len(sec), +1):
         soltarFichaEnColumna((I%2)+1, sec[I], tab)
 
+def reTab():
+    tab = [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]
+    return tab
+
 def listaEnRango(sec, min, max):
     con = 0
     for I in range (0, len(sec), +1):
@@ -28,7 +32,8 @@ def mostrarTablero(tab):
 def comTab():
     if listaEnRango(secuencia, 1, 7) == 1:
         completarTableroEnOrden(tablero, secuencia)
-        mostrarTablero(tablero)
+        listToStr = ' '.join([str(elem) for elem in tablero])
+        print("", listToStr.replace("]", "|\n").replace("[", "|").replace(",", "").replace("0", " "), "|_____________|")
     else:
         print ("Error, Numeros fuera de rango")
 
